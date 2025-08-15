@@ -1,0 +1,87 @@
+/* Add all your previous CSS here, plus these improvements */
+
+/* Accessibility skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #D4AF37;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 999;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Focus states for buttons and links */
+button:focus, a:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #D4AF37;
+    outline-offset: 2px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+}
+.modal-content {
+    background: #fff;
+    margin: 80px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.close {
+    position: absolute;
+    top: 12px; right: 18px;
+    font-size: 32px;
+    color: #D4AF37;
+    cursor: pointer;
+}
+.close:focus {
+    outline: 2px solid #B8860B;
+}
+#contactForm label {
+    display: block;
+    margin: 16px 0 6px;
+}
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    border: 1px solid #E9ECEF;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+#contactForm button {
+    background: #D4AF37;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#contactForm button:hover,
+#contactForm button:focus {
+    background: #B8860B;
+}
+
+/* Tab button focus for accessibility */
+.tab-btn:focus {
+    outline: 2px solid #D4AF37;
+    outline-offset: 2px;
+}
+
+/* Add your previous CSS here ... */
